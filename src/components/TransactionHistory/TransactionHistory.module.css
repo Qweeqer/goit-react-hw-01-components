@@ -1,0 +1,36 @@
+.transactionHistory {
+    display: block;
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+
+}
+
+.info {
+    display: inline-block;
+}
+
+.listHistory {
+    border-collapse: collapse;
+    padding: 10px;
+    border: 1px solid #2a2a2a;
+}
+
+.type,
+.amount,
+.currency {
+    padding: 10px;
+    border: 1px solid black;
+    font-size: small;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.wrap {
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 12pt;
+    position: relative;
+    align-content: space-between;
+}

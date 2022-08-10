@@ -1,0 +1,46 @@
+.wrapper {
+    display: block;
+
+}
+
+.FriendList {
+    position: relative;
+    display: grid;
+    gap: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0;
+    padding-top: 16px;
+}
+
+.item {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.status {
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.false {
+    background-color: red;
+}
+
+.true {
+    background-color: green;
+}
+
+.name {
+    font-size: x-large;
+    margin: 0;
+}
