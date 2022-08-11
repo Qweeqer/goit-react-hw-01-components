@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import css from './Profile.module.css';
 
-export function Profile ({profile:{username, tag, location, avatar, stats}}){
-
+export function Profile ({username, tag, location, avatar, stats}){
+console.log(stats)
     return (
     <div className={css.ProfileCard}>
         <div className={css.Description}>
@@ -36,5 +36,5 @@ Profile.propTypes = {
     username: PropTypes.string,
     tag: PropTypes.string,
     location: PropTypes.string,
-    stats: PropTypes.number,
+    stats: PropTypes.any,
 };
