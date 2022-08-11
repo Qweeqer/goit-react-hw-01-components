@@ -1,4 +1,5 @@
-import { ProfileBoard } from './ProfileBoard/ProfileBoard';
+// import { ProfileBoard } from './ProfileBoard/ProfileBoard';
+import { Profile } from 'components/Profile/Profile';
 import  User from '../db/user.json';
 import { Statistics } from './Statistics/Statistics';
 import data from '../db/data.json';
@@ -12,13 +13,14 @@ export const App = () => {
     <div
       style={{
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 30,
         color: '#010101'
       }}
     >
-      <ProfileBoard profile={User} />
+      <Profile profile={User} />
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />

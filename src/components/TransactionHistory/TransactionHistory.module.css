@@ -1,13 +1,19 @@
 .transactionHistory {
-    display: block;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
     border-collapse: collapse;
-    width: 100%;
+    border: 3px solid purple;
+    /* width: 100%; */
     height: 100%;
 
 }
-
+table tr th:nth-child(1) {
+    width: 50%;
+}
 .info {
     display: inline-block;
+    width: 275px;
 }
 
 /* .listHistory {
@@ -31,9 +37,14 @@
 .wrap {
     text-align: center;
     padding-bottom: 5px;
-    font-size: 12pt;
+    font-size: 12px;
     position: relative;
     align-content: space-between;
-    
 
+}
+.wrap:first-child{
+    background-color: aqua;
+}
+.wrap:nth-child(2n+3) {
+    background-color: rgb(128, 133, 133);
 }

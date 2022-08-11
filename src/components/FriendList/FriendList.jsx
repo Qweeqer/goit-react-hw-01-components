@@ -18,6 +18,7 @@ export const FriendList = ({friends}) => {
     )        
 }
 FriendList.propTypes = {
+    isOnline: PropTypes.bool,
     name: PropTypes.string,
     avatar: PropTypes.any 
 }

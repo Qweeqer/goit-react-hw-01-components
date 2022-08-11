@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './Profile.module.css';
 
-export const UserCard = ({profile: {username, tag, location, avatar, stats: {followers, views, likes} }}) => {
+export const Profile = ({profile: {username, tag, location, avatar, stats: {followers, views, likes} }}) => {
 
     return (
     <div className={css.ProfileCard}>
@@ -31,7 +31,7 @@ export const UserCard = ({profile: {username, tag, location, avatar, stats: {fol
 );
 } 
 
-UserCard.propTypes = {
+Profile.propTypes = {
     name: PropTypes.string,
     tag: PropTypes.string,
     location: PropTypes.string,
