@@ -19,7 +19,12 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      <Profile profile={User} />
+      <Profile
+        avatar={User.avatar}
+        username={User.name}
+        tag={User.tag}
+        location={User.location}
+        stats={User.stats} />
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
