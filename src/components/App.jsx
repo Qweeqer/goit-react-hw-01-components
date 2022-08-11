@@ -1,4 +1,3 @@
-// import { ProfileBoard } from './ProfileBoard/ProfileBoard';
 import { Profile } from 'components/Profile/Profile';
 import  User from '../db/user.json';
 import { Statistics } from './Statistics/Statistics';

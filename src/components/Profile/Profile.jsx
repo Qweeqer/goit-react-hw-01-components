@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './Profile.module.css';
 
-export const Profile = ({profile: {username, tag, location, avatar, stats: {followers, views, likes} }}) => {
+export function Profile ({profile:{username, tag, location, avatar, stats}}){
 
     return (
     <div className={css.ProfileCard}>
@@ -15,15 +15,15 @@ export const Profile = ({profile: {username, tag, location, avatar, stats: {foll
             <ul className={css.Stats}>
                 <li className={css.CardFooterElement}>
                     <span className={css.UserFollowers}>followers: </span>
-                    <span className={css.Quantity}>{followers}</span>
+                    <span className={css.Quantity}>{stats.followers}</span>
                 </li>
                 <li className={css.CardFooterElement}>
                     <span className={css.UserViews}>views:</span>
-                    <span className={css.Quantity}>{views}</span>
+                    <span className={css.Quantity}>{stats.views}</span>
                 </li>
                 <li className={css.CardFooterElement}>
                     <span className={css.UserLikes}>likes:</span>
-                    <span className={css.Quantity}>{likes}</span>
+                    <span className={css.Quantity}>{stats.likes}</span>
                 </li>
             </ul>
         
@@ -32,10 +32,9 @@ export const Profile = ({profile: {username, tag, location, avatar, stats: {foll
 } 
 
 Profile.propTypes = {
-    name: PropTypes.string,
+    avatar: PropTypes.string,
+    username: PropTypes.string,
     tag: PropTypes.string,
     location: PropTypes.string,
     stats: PropTypes.number,
-    views: PropTypes.number,
-    likes: PropTypes.number,
 };
