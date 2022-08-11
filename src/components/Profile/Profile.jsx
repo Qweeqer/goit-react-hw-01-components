@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import css from './Profile.module.css';
 
 export function Profile ({username, tag, location, avatar, stats}){
-console.log(stats)
+
     return (
     <div className={css.ProfileCard}>
         <div className={css.Description}>
